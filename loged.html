@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noon Online Shopping |</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="heading">Sorry The Maximum of width of the screen is "500"</h1>
+    <header>
+        <div class="header-logo">
+            <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+        </div>
+        <div class="header-input">
+            <form>
+                <input type="text" placeholder="What are you looking for" class="searchBox">
+              <div class="icon">
+                <button class="inputSubmit">Submit</button>
+              </div>
+            </form>
+        </div>
+        <div class="header-icons">
+            <a href="#">العربية</a>
+            <a href="#" class="loged">
+                hello, Omar 
+            </a>
+            <a href="#" class="username"></a>
+            <a href="#" class="shopping-cart">
+                Cart
+                <i class="fa-solid fa-cart-shopping" id="icon"></i>
+            </a>
+        </div>
+        <div class="responsive-icons">
+            <a href="#">العربية</a>
+            <a href="#" class="login-btn"> 
+                <i class="fa-regular fa-user" id="icon"></i>
+            </a>
+            <a href="#" class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping" id="icon"></i>
+            </a>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="images/banner-ad.avif" alt="">
+    </div>
+    <div class="slide-show">
+        <div class="slide">
+            <img src="images/banner-1.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-2.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-3.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-4.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-5.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-6.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-7.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-8.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner-9.avif" style="width: 100%;" alt="">
+        </div>
+        <a href="#" class="prev" onclick =  "plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="#" class="next" onclick ="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+          </div>
+    </div>
+    <div class="offers">
+        <img src="images/swip-img-1.avif" alt="">
+        <img src="images/swip-img-2.avif" alt="">
+        <img src="images/swip-img-3.avif" alt="">
+        <img src="images/swip-img-4.avif" alt="">
+        <img src="images/swip-img-5.avif" alt="">
+        <img src="images/swip-img-6.avif" alt="">
+        <img src="images/swip-img-7.avif" alt="">
+        <img src="images/swip-img-8.avif" alt="">
+        <img src="images/swip-img-9.avif" alt="">
+        <img src="images/swip-img-10.avif" alt="">
+        <img src="images/swip-img-11.avif" alt="">
+    </div>
+    <div class="cart-container">
+        <div class="cart-title">
+            <h4>Cart</h4>
+            <img src="images/cart-img.avif" alt="">
+        </div>
+        <div class="cart-product">
+            <div class="card1">
+                <div class="card-title">
+                    <img src="images/pro-1.avif" alt="">
+                </div>
+                <div class="card-title">
+                    <div class="describe">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, at.</h4>
+                        <h5>EGP<span class="product-price"> 82,000</span></h5>
+                    </div>
+                    <div class="remove">
+                        <i class="fas fa-basket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/pro-1.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/pro-2.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/pro-3.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/pro-4.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/pro-5.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="loged.js"></script>
+    <script src="header.js"></script>
+ <script>
+    //catch the elements
+var searchBox = document.querySelector('.searchBox');
+var inputSubmit = document.querySelector('.inputSubmit');
+//when submit button clicked
+inputSubmit.onclick = function(){
+    //if the search box text is food 
+    if(searchBox.value.match("food")){
+        //go to food page
+        console.log(window.location.assign('food.html'));
+    }
+    //if the search box text is supermarket
+    else if(searchBox.value.match("supermarket")){
+        //go to supermarket page
+        console.log(window.location.assign('supermarket.html'))
+    }
+    //if the search box text is men 
+    else if(searchBox.value.match("men")){
+        // go to men page
+        console.log(window.location.assign('men.html'))
+    }
+    //if the search box text is woman
+    else if(searchBox.value.match("woman")){
+        //go to woman page
+        console.log(window.location.assign('women.html'))
+    }
+    //if the search box text is kids 
+    else if(searchBox.value.match("kids")){
+        //go to kids page
+        console.log(window.location.assign('kids.html'))
+    }
+}
+console.log(inputSubmit)
+console.log(searchBox)
+
+//slide show
+//the slide index
+let slideIndex = 1;
+showSlides(slideIndex);
+//the next and prev  button
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}//the current slide
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+//to show the slide
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  //show slide
+  if (n > slides.length){
+   slideIndex = 1
+}
+  if (n < 1) {
+    slideIndex = slides.length
+}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+//go to login page
+var loginBtn = document.querySelector('.login-btn')
+loginBtn.onclick = function(){
+    window.location.assign('login.html')
+}
+
+    </script>
+
+</body>
+</html>
