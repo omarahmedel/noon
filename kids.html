@@ -3,9 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kids Shop</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="men.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>kids Page</h1>
+    <header>
+        <div class="header-logo">
+            <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+        </div>
+        <div class="header-input">
+            <form>
+                <input type="text" placeholder="What are you looking for" class="searchBox">
+              <div class="icon">
+                <button class="submitbtn">Submit</button>
+              </div>
+            </form>
+        </div>
+        <div class="header-icons">
+            <a href="#">العربية</a>
+            <a href="#" class="loged">
+                hello, Omar 
+            </a>
+            <div class="cart-icon">
+                <a href="cart.html" class="shopping-cart">
+                    Cart
+                    <i class="fa-solid fa-cart-shopping" id="icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="responsive-icons">
+            <a href="#">العربية</a>
+            <a href="#" class="login-btn"> 
+                <i class="fa-regular fa-user" id="icon"></i>
+            </a>
+            <a href="#" class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping" id="icon"></i>
+            </a>
+        </div>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" style = "color:rgb(0, 0, 218);font-size: 1.2rem; display: flex; justify-content: space-between;align-items: center;margin: 10px">All Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="mobiles.html">Moblies</a></li>
+            <li><a href="#" class="man">Men</a></li>
+            <li><a href="#" class="woman">Women</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="beautyhtml">Beauty & Health</a></li>
+            <li><a href="baby.html">Baby & Toys</a></li>
+            <li><a href="#" class="supermarket">SuperMarket</a></li>
+            <li><a href="sell.html">Sell On Noon</a></li>
+            <li><a href="deals.html" style="color: rgb(230, 3, 3);font-size: 1rem;font-weight: 600">Deals</a></li>
+        </ul>
+    </div>
+    <div class="filter">
+        <a href="women.html"><img src="images/men-img.avif" alt=""></a>
+        <a href="men.html"><img src="images/woman-img2.avif" alt=""></a>
+        <a href="kids.html"><img src="images/kids-filter.avif" alt=""></a>
+    </div>
+    <div class="slide-show">
+        <div class="slide">
+            <img src="images/menslide1.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide2.avif" style="width: 100%;" alt="">    
+        </div>
+        <div class="slide">
+            <img src="images/woman-slideshow1.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide4.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide5.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide6.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide7.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/menslide8.avif" style="width: 100%;" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/woman-slideshow2.avif" style="width: 100%;" alt="">
+        </div>
+        <a href="#" class="prev" onclick =  "plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="#" class="next" onclick ="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            <span class="dot" onclick="currentSlide(10)"></span> 
+          </div>
+    </div>
+    <div class="aboutus">
+        <img src="images/delevery.avif" width="100%" alt="">
+    </div>
+    <div class="offers" style="width: 100%;padding-top: 2rem;">
+        <img src="images/kids-offer1.avif" alt="">
+        <img src="images/kids-offer2.avif" alt="">
+        <img src="images/kids-offer3.avif" alt="">
+        <img src="images/kids-offer4.avif" alt="">
+        <img src="images/kids-offer5.avif" alt="">
+        <img src="images/kids-offer6.avif" alt="">
+        <img src="images/kids-offer7.avif" alt="">
+        <img src="images/kids-offer8.avif" alt="">
+        <img src="images/kids-offer10.avif" alt="">
+        <img src="images/kids-offer9.avif" alt="">
+    </div>
+    <div class="offer-ad">
+        <img src="images/men-ad1.avif" width="100%" alt="">
+    </div>
+    <div class="fashon">
+        <img src="images/kids-img.avif" width="100%" alt="">
+        <div class="cards" style="width: 100%">
+            <img src="images/kids-images2.avif" alt="">
+            <img src="images/kids-images3.avif" alt="">
+            <img src="images/kids-images4.avif" alt="">
+            <img src="images/kids-images5.avif" alt="">
+            <img src="images/kids-images6.avif" alt="">
+            <img src="images/kids-images7.avif" alt="">
+            <img src="images/kids-images8.avif" alt="">
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro1.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro2.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro3.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro4.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro5.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro6.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro7.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro8.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro9.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro10.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro6.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro7.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro8.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro9.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro10.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro6.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro7.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro8.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro9.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro10.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro6.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro7.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro8.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro9.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="images/menpro10.avif" alt="">
+            </div>
+            <div class="card-text">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
+                <div class="price">
+                    <h5>EGP<span class="total-price"> 82,000</span></h5>
+                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                </div>
+                <img src="images/expres.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-header-text">
+                <h3>We're Always Here To Help</h3>
+                <h5>Reach out to us through any of these support channels</h5>
+            </div>
+            <div class="footer-header-icons">
+                <div class="footer-card">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="footer-card-text">
+                        <span>Help Center</span>
+                        <h3>Help.Noon.com</h3>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="footer-card-text">
+                        <span>Help Center</span>
+                        <h3>Help.Noon.com</h3>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="footer-card-text">
+                        <span>Help Center</span>
+                        <h3>Help.Noon.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Electronics</li>
+                    <li>Mobiles</li>
+                    <li>Tablets</li>
+                    <li>Laptops</li>
+                    <li>Home Appliance</li>
+                    <li>Camera, Photo & Video</li>
+                    <li>Television</li>
+                    <li>HeadPhones</li>
+                    <li>Video Games</li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Fashion</li>
+                    <li>Women's Fashion</li>
+                    <li>Men's Fashion</li>
+                    <li>Girls' Fashion</li>
+                    <li>Boys' Fashion</li>
+                    <li>Men's Watches</li>
+                    <li>Women's Watches</li>
+                    <li>Eyewear</li>
+                    <li>Bags & Luggage</li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Home and Kitchen</li>
+                    <li>Mobiles</li>
+                    <li>Tablets</li>
+                    <li>Laptops</li>
+                    <li>Home Appliance</li>
+                    <li>Camera, Photo & Video</li>
+                    <li>Television</li>
+                    <li>HeadPhones</li>
+                    <li>Video Games</li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Beauty</li>
+                    <li>Mobiles</li>
+                    <li>Tablets</li>
+                    <li>Laptops</li>
+                    <li>Home Appliance</li>
+                    <li>Camera, Photo & Video</li>
+                    <li>Television</li>
+                    <li>HeadPhones</li>
+                    <li>Video Games</li>
+                </ul>
+            </nav>
+           
+        </div>
+        <div class="footer-footer">
+            <div class="footer-texts">
+                <h3>© 2024 noon. All Rights Reserved</h3>    
+            </div>
+            <div class="footer-pays">
+                <img src="images/payment1.svg" alt="">
+                <img src="images/payment2.svg" alt="">
+                <img src="images/payment3.svg" alt="">
+                <img src="images/payment4.svg" alt="">
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>Careers</li>
+                    <li>Warranty Policy</li>
+                    <li>Sell With Us</li>
+                    <li>Terms Of US</li>
+                    <li>Terms Of Sale</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+       </footer>
+    <script src="slideshow.js"></script>
 </body>
 </html>
