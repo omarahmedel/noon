@@ -4,39 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noon Online Shopping |</title>
-    <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loader"></div>
     <h1 class="heading">Sorry The Maximum of width of the screen is "500"</h1>
     <header>
         <div class="header-logo">
-            <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+            <div class="logo">
+                <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+            </div>
+            <div class="country">
+                <img src="images/egypt.svg" alt="">
+                <div class="text">
+                <h5>Deliver<i class="fa-solid fa-chevron-down"></i></h5>
+<h4>Cairo</h4>
+                </div>
+            </div>
         </div>
         <div class="header-input">
             <form>
-                <input type="text" placeholder="What are you looking for" class="search-box" onfocus="closeBtn">
-              <div class="icon">
-                <button class="input-submit">Submit</button>
-              </div>
+                <input type="text" placeholder="What are you looking for" class="searchBox">
+                <div class="icon">
+                    <button class="submitbtn">Submit</button>
+                </div>
             </form>
         </div>
         <div class="header-icons">
             <a href="#">العربية</a>
-            <a href="login.html" class="login-btn">
-                Login 
-                <i class="fa-regular fa-user" id="icon"></i>
+            <a href="#" class="loged">
+                hello, Omar 
             </a>
-            <a href="#" class="shopping-cart">
-                Cart
-                <i class="fa-solid fa-cart-shopping" id="icon"></i>
-            </a>
+         
+            <div class="wishlist">
+                <a href="#">WishList <i class="fa-regular fa-heart"></i></a>
+            </div>
+            <div class="shopping">
+                <a href="#">Cart <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a>
+            </div>
+        </div>
         </div>
         <div class="responsive-icons">
             <a href="#">العربية</a>
-            <a href="login.html" class="login-btn"> 
+            <a href="#" class="login-btn">
                 <i class="fa-regular fa-user" id="icon"></i>
             </a>
             <a href="#" class="shopping-cart">
@@ -54,14 +70,18 @@
     <div class="login-input">
         <input type="text" placeholder="Enter Your Email" class="email-input">
             <h5 class="invalid-email">Please enter valid email</h5>
+            <h5 class="wrong-email">Please Fill The Input</h5>
         <input type="password" placeholder="Enter Your Password" class="password-input">
         <h5 class="invalid-password">Please enter valid password</h5>
+        <h5 class="wrong-password">Please Fill The Input</h5>
     </div>
     <div class="login-submit">
         <a href="#" class="submitBtn">Submit</a>
         <a href="#" class="clearBtn">Clear</a>
     </div>
   </div>
-   <script src="login.js"></script>
+   <script src="assets/js/login.js"></script>
+   <script src="assets/js/header.js"></script>
+   <script src="assets/js/online&ofline.js"></script>
 </body>
 </html>

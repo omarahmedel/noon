@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="loader"></div>
     <header>
         <div class="header-logo">
-            <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+            <div class="logo">
+                <a href="#"><img src="images/noon-logo-en.svg" alt=""></a>
+            </div>
+            <div class="country">
+                <img src="images/egypt.svg" alt="">
+                <div class="text">
+                <h5>Deliver<i class="fa-solid fa-chevron-down"></i></h5>
+<h4>Cairo</h4>
+                </div>
+            </div>
         </div>
         <div class="header-input">
             <form>
                 <input type="text" placeholder="What are you looking for" class="searchBox">
-              <div class="icon">
-                <button class="submitbtn">Submit</button>
-              </div>
+                <div class="icon">
+                    <button class="submitbtn">Submit</button>
+                </div>
             </form>
         </div>
         <div class="header-icons">
@@ -26,16 +38,20 @@
             <a href="#" class="loged">
                 hello, Omar 
             </a>
-            <div class="cart-icon">
-                <a href="cart.html" class="shopping-cart">
-                    Cart
-                    <i class="fa-solid fa-cart-shopping" id="icon"></i>
-                </a>
+         
+            <div class="wishlist">
+                <a href="#">WishList <i class="fa-regular fa-heart"></i></a>
             </div>
+            <div class="shopping">
+                <a href="#">Cart <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a>
+            </div>
+        </div>
         </div>
         <div class="responsive-icons">
             <a href="#">العربية</a>
-            <a href="#" class="login-btn"> 
+            <a href="#" class="login-btn">
                 <i class="fa-regular fa-user" id="icon"></i>
             </a>
             <a href="#" class="shopping-cart">
@@ -45,7 +61,7 @@
     </header>
     <div class="navbar">
         <ul>
-            <li><a href="#" style = "color:rgb(0, 0, 218);font-size: 1.2rem; display: flex; justify-content: space-between;align-items: center;margin: 10px">All Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#" style="color:rgb(0, 0, 218);font-size: 1.2rem; display: flex; justify-content: space-between;align-items: center;margin: 10px">All Categories <i class="fa-solid fa-chevron-down"></i></a></li>
             <li><a href="electroncs.html">Electronics</a></li>
             <li><a href="moblies.html">Moblies</a></li>
             <li><a href="#" class="man">Men</a></li>
@@ -80,17 +96,17 @@
         <div class="slide">
             <img src="images/electronic-img6.avif" style="width: 100%;" alt="">
         </div>
-        </div>
-        <a href="#" class="prev" style="cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: 30px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;" onclick ="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
-        <a href="#" class="next" style="cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: 30px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;" onclick ="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-          </div>
+    </div>
+    <a href="#" class="prev" style="cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: 30px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+    <a href="#" class="next" style="cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: 30px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
     </div>
     <div class="offers">
         <img src="images/offer1.avif" alt="">
@@ -105,12 +121,10 @@
         <img src="images/offer10.avif" alt="">
         <img src="images/offer11.avif" alt="">
     </div>
-    <div class="cardss">
-        <h2>Best Deals</h2>
     <div class="cards">
         <div class="card">
             <div class="card-title">
-                <img src="images/electro1.avif" alt="">
+                <a href="pro1.html"><img src="images/mobile-pro1.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -123,7 +137,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro2.avif" alt="">
+                <a href="pro2.html"><img src="images/mobile-pro3.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -136,7 +150,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro3.avif" alt="">
+                <a href="pro3.html"><img src="images/mobile-pro4.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -149,7 +163,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro4.avif" alt="">
+                <a href="pro4.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -162,7 +176,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro5.avif" alt="">
+                <a href="pro5.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -174,13 +188,10 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="cardss">
-        <h2>Gaming Essentials</h2>
     <div class="cards">
         <div class="card">
             <div class="card-title">
-                <img src="images/headphone.avif" alt="">
+                <a href="pro1.html"><img src="images/mobile-pro1.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -193,7 +204,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/headphone1.avif" alt="">
+                <a href="pro2.html"><img src="images/mobile-pro3.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -206,7 +217,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/headphone2.avif" alt="">
+                <a href="pro3.html"><img src="images/mobile-pro4.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -219,7 +230,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/headphone3.avif" alt="">
+                <a href="pro4.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -232,7 +243,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/headphone5.avif" alt="">
+                <a href="pro5.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -243,7 +254,6 @@
                 <img src="images/expres.svg" alt="">
             </div>
         </div>
-    </div>
     </div>
     <div class="ad">
         <img src="images/ad.gif" style="width: 100%" alt="">
@@ -251,7 +261,7 @@
     <div class="cards">
         <div class="card">
             <div class="card-title">
-                <img src="images/electro1.avif" alt="">
+                <a href="pro1.html"><img src="images/mobile-pro1.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -264,7 +274,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro2.avif" alt="">
+                <a href="pro2.html"><img src="images/mobile-pro3.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -277,7 +287,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro3.avif" alt="">
+                <a href="pro3.html"><img src="images/mobile-pro4.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -290,7 +300,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro4.avif" alt="">
+                <a href="pro4.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -303,7 +313,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro5.avif" alt="">
+                <a href="pro5.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -321,7 +331,7 @@
     <div class="cards">
         <div class="card">
             <div class="card-title">
-                <img src="images/electro1.avif" alt="">
+                <a href="pro1.html"><img src="images/mobile-pro1.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -334,7 +344,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro2.avif" alt="">
+                <a href="pro2.html"><img src="images/mobile-pro3.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -347,7 +357,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro3.avif" alt="">
+                <a href="pro3.html"><img src="images/mobile-pro4.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -360,7 +370,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro4.avif" alt="">
+                <a href="pro4.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -373,7 +383,7 @@
         </div>
         <div class="card">
             <div class="card-title">
-                <img src="images/electro5.avif" alt="">
+                <a href="pro5.html"> <img src="images/mobile-pro5.avif" alt=""></a>
             </div>
             <div class="card-text">
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
@@ -392,73 +402,6 @@
             <img src="images/banner-electro3.avif" alt="">
             <img src="images/banner-electro4.avif" alt="">
             <img src="images/banner-electro5.avif" alt="">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <div class="card-title">
-                <img src="images/electro1.avif" alt="">
-            </div>
-            <div class="card-text">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
-                <div class="price">
-                    <h5>EGP<span class="total-price"> 82,000</span></h5>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                </div>
-                <img src="images/expres.svg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-title">
-                <img src="images/electro2.avif" alt="">
-            </div>
-            <div class="card-text">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
-                <div class="price">
-                    <h5>EGP<span class="total-price"> 82,000</span></h5>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                </div>
-                <img src="images/expres.svg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-title">
-                <img src="images/electro3.avif" alt="">
-            </div>
-            <div class="card-text">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
-                <div class="price">
-                    <h5>EGP<span class="total-price"> 82,000</span></h5>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                </div>
-                <img src="images/expres.svg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-title">
-                <img src="images/electro4.avif" alt="">
-            </div>
-            <div class="card-text">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
-                <div class="price">
-                    <h5>EGP<span class="total-price"> 82,000</span></h5>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                </div>
-                <img src="images/expres.svg" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-title">
-                <img src="images/electro5.avif" alt="">
-            </div>
-            <div class="card-text">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, velit.</h4>
-                <div class="price">
-                    <h5>EGP<span class="total-price"> 82,000</span></h5>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
-                </div>
-                <img src="images/expres.svg" alt="">
-            </div>
         </div>
     </div>
     <footer class="footer">
@@ -544,11 +487,11 @@
                     <li>Video Games</li>
                 </ul>
             </nav>
-           
+
         </div>
         <div class="footer-footer">
             <div class="footer-texts">
-                <h3>© 2024 noon. All Rights Reserved</h3>    
+                <h3>© 2024 noon. All Rights Reserved</h3>
             </div>
             <div class="footer-pays">
                 <img src="images/payment1.svg" alt="">
@@ -567,8 +510,72 @@
                 </ul>
             </div>
         </div>
-       </footer>
-    <script src="slideshow.js"></script>
-    <script src="header.js"></script>
+
+        </li>
+        <li class="active1">Fashion
+            <li>Women's Fashion</li>
+            <li>Men's Fashion</li>
+            <li>Girls' Fashion</li>
+            <li>Boys' Fashion</li>
+            <li>Men's Watches</li>
+            <li>Women's Watches</li>
+            <li>Eyewear</li>
+            <li>Bags & Luggage</li>
+            </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Home and Kitchen</li>
+                    <li>Mobiles</li>
+                    <li>Tablets</li>
+                    <li>Laptops</li>
+                    <li>Home Appliance</li>
+                    <li>Camera, Photo & Video</li>
+                    <li>Television</li>
+                    <li>HeadPhones</li>
+                    <li>Video Games</li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="active1">Beauty</li>
+                    <li>Mobiles</li>
+                    <li>Tablets</li>
+                    <li>Laptops</li>
+                    <li>Home Appliance</li>
+                    <li>Camera, Photo & Video</li>
+                    <li>Television</li>
+                    <li>HeadPhones</li>
+                    <li>Video Games</li>
+                </ul>
+            </nav>
+
+            </div>
+            <div class="footer-footer">
+                <div class="footer-texts">
+                    <h3>© 2024 noon. All Rights Reserved</h3>
+                </div>
+                <div class="footer-pays">
+                    <img src="images/payment1.svg" alt="">
+                    <img src="images/payment2.svg" alt="">
+                    <img src="images/payment3.svg" alt="">
+                    <img src="images/payment4.svg" alt="">
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li>Careers</li>
+                        <li>Warranty Policy</li>
+                        <li>Sell With Us</li>
+                        <li>Terms Of US</li>
+                        <li>Terms Of Sale</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/online&ofline.js"></script>
 </body>
+
 </html>

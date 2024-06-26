@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
+    <title>Help</title>
         <link rel="stylesheet" href="assets/css/home.css">
-
+    <link rel="stylesheet" href="assets/css/help.css">
 </head>
 <body>
+    <div class="loader"></div>
     <header>
         <div class="header-logo">
             <div class="logo">
@@ -55,7 +56,6 @@
             </a>
         </div>
     </header>
-
     <div class="navbar">
         <ul>
             <li><a href="#" class="electronics" style = "color:rgb(0, 0, 218);font-size: 1.2rem; display: flex; justify-content: space-between;align-items: center;margin: 10px">All Categories <i class="fa-solid fa-chevron-down"></i></a></li>
@@ -71,14 +71,23 @@
             <li><a href="deals.html" class="deals" style="color: rgb(230, 3, 3);font-size: 1rem;font-weight: 600">Deals</a></li>
         </ul>
     </div>
-    <div class="container">
-        <img src="images/notfound-img.svg" alt="">
-        <div class="container-text">
-            <h1>We couldn’t find what you were looking for</h1>
-            <h4>Keep calm and search again. We have SO many other products that you will like!</h4>
-            <a href="loged.html">continue shopping</a>
+    <div class="help-container">
+        <div class="help-header">
+            <h4>Help</h4>
+            <input type="text" placeholder="What You Want" class="help">
+        </div>
+        <div class="help-suggest">
+            <h3>Top Suggestions</h3>
+            <div class="suggest">
+                <ol>
+                    <li>Can I split my payment between wallet and Credit Card/Cash on Delivery?</li>
+                    <li>Which countries do you ship to?</li>
+                    <li>How does Cash on Delivery work?</li>
+                </ol>
+            </div>
         </div>
     </div>
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/online&ofline.js"></script>
 </body>
 </html>

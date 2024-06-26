@@ -1,0 +1,41 @@
+.help-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.help-container .help-header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(64, 69, 83);
+}
+.help-container .help-header h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f2f2f2; 
+    margin: auto;
+    padding: 0.8rem;
+}
+.help-container .help-header input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.help-container .help-suggest{
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+.help-container .help-suggest h3{
+    text-align: center;
+}

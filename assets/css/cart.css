@@ -1,0 +1,9 @@
+.container .cards {
+    display: flex;
+}
+
+.cart .cart1 .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
